@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Define your theme */
+@theme {
+  /* Screens */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 375px;
+  --breakpoint-sml: 500px;
+  --breakpoint-md: 667px;
+  --breakpoint-mdl: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-lgl: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* Font families */
+  --font-family-body: "Poppins", sans-serif;
+  --font-family-title: "Montserrat", sans-serif;
+
+  /* Colors */
+  --color-body: 33 36 40; /* #212428 in RGB */
+  --color-light-text: 196 207 222; /* #c4cfde in RGB */
+  --color-design: 255 1 79; /* #ff014f in RGB */
+}
+
+/* Custom utilities */
+@layer utilities {
+  .box-bg {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+  }
+
+  .shadow-one {
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  }
+}
+
+/* Base styles */
+body {
+  background-color: rgb(var(--color-body));
+  color: rgb(var(--color-light-text));
+  font-family: var(--font-family-body);
+}
