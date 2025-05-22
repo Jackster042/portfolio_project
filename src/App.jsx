@@ -2,11 +2,15 @@ import React from "react";
 
 const App = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="text-3xl font-bold underline cursor-pointer text-indigo-600">
-        Portfolio Project
-      </h1>
-    </div>
+    <>
+      <div className="w-full h-auto px-4">
+        {/* navbar here */}
+        <div className="max-w-screen-xl mx-auto">
+          {/* other components here */}
+          <h1>project</h1>
+        </div>
+      </div>
+    </>
   );
 };
 
